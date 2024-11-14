@@ -30,7 +30,7 @@ export default function Transactions() {
   }
 
   return (
-    <div className="border w-full bg-[#FAFAF8]">
+    <div className="w-full bg-[#FAFAF8]">
       <div className="bg-white sticky top-0 z-10 p-3 py-5 flex items-center justify-between gap-1">
         <Link href="/dashboard" className="flex items-center gap-2">
           <IoIosArrowBack />
@@ -41,7 +41,7 @@ export default function Transactions() {
         <div className="bg-white rounded-lg p-4">
           {user?.transaction_history.length == 0 && <div className="text-sm text-center p-4">No Recent Transaction</div>}
           {user?.transaction_history.map((transaction: Transaction) => (
-            <div key={transaction.transaction_id} className="flex justify-between py-3">
+            <div key={transaction.transaction_id} className="flex justify-between border-b py-3">
               <div className="flex gap-2 text-gray-800">
                 <div className="flex flex-col gap-1 justify-between">
                 <span className="text-[15px] font-[600] truncate max-w-[200px] sm:max-w-full overflow-hidden">{transaction.description}</span>

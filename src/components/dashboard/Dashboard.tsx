@@ -72,7 +72,7 @@ export default function Dashboard() {
         </div>
         <div className="mt-2">
           <p className="text-white font-semibold">Accounts</p>
-          <div className="bg-[#2a72be91] flex justify-between items-center rounded-[8px] p-3 mt-3">
+          <div className="bg-[#2a72be91] flex justify-between items-center rounded-[8px] p-3 px-4 mt-3">
             <div className="flex flex-col gap-1">
               <span className="text-white font-semibold">Checking</span>
               <span className="text-white text-xs">x1234</span>
@@ -83,7 +83,7 @@ export default function Dashboard() {
             </div>
           </div>
 
-          <div className="bg-[#2a72be91] flex justify-between items-center rounded-[8px] p-3 mt-3">
+          <div className="bg-[#2a72be91] flex justify-between items-center rounded-[8px] p-3 px-4 mt-3">
             <div className="flex flex-col gap-1">
               <span className="text-white font-semibold">Savings</span>
               <span className="text-white text-xs">x1234</span>

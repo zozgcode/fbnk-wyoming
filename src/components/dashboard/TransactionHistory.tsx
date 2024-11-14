@@ -24,7 +24,7 @@ const TransactionHistory: React.FC<TransactionHistoryProps> = ({ user, hideBalan
     <div className="">
       {transactionsToShow.length === 0 && <div className="text-sm text-center p-4">No Recent Transaction</div>}
       {transactionsToShow.map((transaction: Transaction) => (
-        <div key={transaction.transaction_id} className="flex justify-between py-3">
+        <div key={transaction.transaction_id} className="flex border-b justify-between py-3">
           <div className="flex gap-2 text-gray-800">
             <div className="flex flex-col gap-1 justify-between">
               <span className="text-[15px] font-[600] truncate max-w-[200px] sm:max-w-full overflow-hidden">{transaction.description}</span>
